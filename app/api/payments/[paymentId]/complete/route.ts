@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { paymentId: string } }
+  { params }: { params: Promise<{ paymentId: string }> }
 ) {
   try {
+    const { paymentId } = await params;
     const body = await req.json();
-    const res = await fetch(`https://api.testnet.minepi.com/v2/payments/${params.paymentId}/complete`, {
+    const res = await fetch(`https://api.minepi.com/v2/payments/${paymentId}/complete`, {
       method: "POST",
       headers: {
         Authorization: `Key ${process.env.PI_API_KEY}`,

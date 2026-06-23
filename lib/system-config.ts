@@ -4,8 +4,8 @@ export const PI_NETWORK_CONFIG = {
 } as const;
 
 export const BACKEND_CONFIG = {
-  BASE_URL: "https://backend.appstudio-u7cm9zhmha0ruwv8.piappengine.com",
-  BLOCKCHAIN_BASE_URL: "https://api.testnet.minepi.com",
+  BASE_URL: "https://blockgemini.vercel.app",
+  BLOCKCHAIN_BASE_URL: "https://api.minepi.com",
 } as const;
 
 export const BACKEND_URLS = {
