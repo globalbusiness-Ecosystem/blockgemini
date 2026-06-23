@@ -1,6 +1,6 @@
 export const PI_NETWORK_CONFIG = {
   SDK_URL: "https://sdk.minepi.com/pi-sdk.js",
-  SANDBOX: true,
+  SANDBOX: false,
 } as const;
 
 export const BACKEND_CONFIG = {
