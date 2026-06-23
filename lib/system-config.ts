@@ -14,7 +14,7 @@ export const BACKEND_URLS = {
   GET_PRODUCTS: (appId: string) =>
     `${BACKEND_CONFIG.BASE_URL}/v1/apps/${appId}/products`,
   GET_PAYMENT: (paymentId: string) =>
-    `https://api.minepi.com/v2/payments/${paymentId}`,
+    `/api/payments/${paymentId}/get`,
   APPROVE_PAYMENT: (paymentId: string) =>
     `/api/payments/${paymentId}/approve`,
   COMPLETE_PAYMENT: (paymentId: string) =>
