@@ -14,11 +14,11 @@ export const BACKEND_URLS = {
   GET_PRODUCTS: (appId: string) =>
     `${BACKEND_CONFIG.BASE_URL}/v1/apps/${appId}/products`,
   GET_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}`,
+    `https://api.minepi.com/v2/payments/${paymentId}`,
   APPROVE_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}/approve`,
+    `/api/payments/${paymentId}/approve`,
   COMPLETE_PAYMENT: (paymentId: string) =>
-    `${BACKEND_CONFIG.BASE_URL}/proxy/v2/payments/${paymentId}/complete`,
+    `/api/payments/${paymentId}/complete`,
 } as const;
 
 export const PI_PLATFORM_URLS = {} as const;
